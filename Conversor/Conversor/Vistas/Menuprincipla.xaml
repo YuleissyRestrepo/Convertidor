@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Conversor.Vistas.Menuprincipla"
+             NavigationPage.HasNavigationBar="False">
+    <!--Contenedor vertical-->
+    <StackLayout BackgroundColor="#A3E4D7">
+        <!--Da color a todo el contenedor -->
+        <Label Text="Conversor"
+               FontSize="50"
+               FontAttributes="Bold"
+               Margin="0,10,0,10"
+               HorizontalOptions="Center" />
+        <!--Contenedor que solo soporta una instrupcion-->
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20"
+               CornerRadius="20"
+               HasShadow="False">
+            <!--Contenedor que esta deltro del contenedor Frame, vertical -->
+            <StackLayout VerticalOptions="Center"
+                         Spacing="20">
+                <Image Source="cinta.png" 
+                       />
+                <Label Text="(cm) a (m)"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalOptions="Center" />
+                <Button Text="Iniciar"
+                        TextTransform="None"
+                        BackgroundColor="#48C9B0"
+                        CornerRadius="10"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        x:Name="Btniniciar" 
+                        Clicked="Btniniciar_Clicked_1"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
